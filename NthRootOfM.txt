@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.lang.*;
+import java.io.*;
+
+class Root{
+  public void findRoot(float n , float m){
+     n = 1 / n;
+     System.out.println("Number is:"+Math.pow(m ,n));
+  }    
+}
+
+class Main {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Root r = new Root();
+		System.out.println("Enter nth root");
+		float n = sc.nextFloat();
+		System.out.println("Enter number");
+		float m = sc.nextFloat();
+		r.findRoot(n ,m);
+	}
+}

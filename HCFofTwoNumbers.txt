@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class HCF{
+    public void hcfMeth(int n1 , int n2){
+        int gcd = 1;
+        for(int i = 1 ; i <= n1 && i <= n2 ; i++)
+        {
+            if(n1 % i == 0 && n2 % i == 0){
+                 gcd=i;
+            }
+        }
+        System.out.println("HCF IS :"+gcd);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		HCF h = new HCF();
+		System.out.println("Enter numbers for HCF : ");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		h.hcfMeth(x,y);
+	}
+}

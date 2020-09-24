@@ -1,0 +1,30 @@
+import java.util.;
+
+public class Main
+{
+  private static final Scanner scn = new Scanner(System.in);
+	public static void main(String[] args) {
+      Scanner scn = new Scanner();
+      
+      LinkedListInteger Node = new LinkedList();
+      
+      System.out.println(Enetr Count of node you want to insert);
+      int count = scn.nextInt();
+      
+      for(int i = 0 ; i  count ; i++)
+      {
+          int data = scn.nextInt();
+          Node.add(data);
+      }
+      
+      System.out.println(Enter Postion);
+      int position = scn.nextInt();
+      System.out.println(Enter data);
+      int data1 = scn.nextInt();
+      Node.add(position , data1 );
+      
+      System.out.println(LL is   + Node);
+      
+	}
+	
+}

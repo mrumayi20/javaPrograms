@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class armstrong{
+     public void armstrongNo(int x){
+        int num = x;
+        int result = 0;
+        int LD = 0;
+        
+        while(num > 0)
+        {
+            LD = num%10;
+            result = result + (LD*LD*LD);
+            num = num/10;
+        }
+        
+        if(x == result)
+        {
+            System.out.println("Yes , it is!");
+        }else{
+            System.out.println("No !! It's Not");
+        }
+     }
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner(System.in);
+    armstrong A = new armstrong();
+    int x = sc.nextInt();
+     A.armstrongNo(x);
+  }
+}
